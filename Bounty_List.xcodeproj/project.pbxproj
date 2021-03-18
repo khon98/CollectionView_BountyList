@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		2756A4E425F22277009FE9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A4E325F22277009FE9CD /* AppDelegate.swift */; };
 		2756A4E625F22277009FE9CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A4E525F22277009FE9CD /* SceneDelegate.swift */; };
-		2756A4E825F22277009FE9CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A4E725F22277009FE9CD /* ViewController.swift */; };
 		2756A4EB25F22277009FE9CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2756A4E925F22277009FE9CD /* Main.storyboard */; };
 		2756A4ED25F2227A009FE9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2756A4EC25F2227A009FE9CD /* Assets.xcassets */; };
 		2756A4F025F2227A009FE9CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2756A4EE25F2227A009FE9CD /* LaunchScreen.storyboard */; };
 		2756A4FB25F2227A009FE9CD /* Bounty_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A4FA25F2227A009FE9CD /* Bounty_ListTests.swift */; };
 		2756A50625F2227A009FE9CD /* Bounty_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A50525F2227A009FE9CD /* Bounty_ListUITests.swift */; };
+		2756A51A25F222BF009FE9CD /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A51925F222BF009FE9CD /* BountyViewController.swift */; };
+		2756A51F25F243D0009FE9CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756A51E25F243D0009FE9CD /* DetailViewController.swift */; };
+		27E9722025F30CAC003704B9 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9721F25F30CAC003704B9 /* BountyInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		2756A4E025F22277009FE9CD /* Bounty_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounty_List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2756A4E325F22277009FE9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2756A4E525F22277009FE9CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2756A4E725F22277009FE9CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2756A4EA25F22277009FE9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2756A4EC25F2227A009FE9CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2756A4EF25F2227A009FE9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		2756A50125F2227A009FE9CD /* Bounty_ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bounty_ListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2756A50525F2227A009FE9CD /* Bounty_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounty_ListUITests.swift; sourceTree = "<group>"; };
 		2756A50725F2227A009FE9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2756A51925F222BF009FE9CD /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
+		2756A51E25F243D0009FE9CD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		27E9721F25F30CAC003704B9 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				2756A4E325F22277009FE9CD /* AppDelegate.swift */,
 				2756A4E525F22277009FE9CD /* SceneDelegate.swift */,
-				2756A4E725F22277009FE9CD /* ViewController.swift */,
 				2756A4E925F22277009FE9CD /* Main.storyboard */,
 				2756A4EC25F2227A009FE9CD /* Assets.xcassets */,
 				2756A4EE25F2227A009FE9CD /* LaunchScreen.storyboard */,
 				2756A4F125F2227A009FE9CD /* Info.plist */,
+				2756A51925F222BF009FE9CD /* BountyViewController.swift */,
+				27E9721F25F30CAC003704B9 /* BountyInfo.swift */,
+				2756A51E25F243D0009FE9CD /* DetailViewController.swift */,
 			);
 			path = Bounty_List;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2756A4E825F22277009FE9CD /* ViewController.swift in Sources */,
+				27E9722025F30CAC003704B9 /* BountyInfo.swift in Sources */,
 				2756A4E425F22277009FE9CD /* AppDelegate.swift in Sources */,
+				2756A51A25F222BF009FE9CD /* BountyViewController.swift in Sources */,
 				2756A4E625F22277009FE9CD /* SceneDelegate.swift in Sources */,
+				2756A51F25F243D0009FE9CD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
